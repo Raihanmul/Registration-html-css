@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Account</title>
+  </head>
+<body>
+  <header class="header">
+  <h1 id="title" class="text-center">Registration Account</h1>
+  <p id="description" class="description-center">Thank you for taking the time to create an account on our website.</p>
+  </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input class="form-control"id="name" type="text" placeholder="Enter your name" required/>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input class="form-control" id="email" type="email" placeholder="Enter your Email" required/>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input class="form-control" id="number" type="number" placeholder="Age" min="13" max="40"/>
+      </div>
+      <div class="form-group">
+      <p>What is your favorite thing?</p>
+      <select id="dropdown" name="dropdown" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="adventure">Adventure</option>
+        <option value="bonus">Bonus</option>
+        <option value="story">Story</option>
+        <option value="gameplay">Gameplay</option>
+      </select>
+      </div>
+      <div class="form-group>">
+        <p>How did you find out about our website?</p>
+        <div class="sosmed">
+        <label>
+          <input class="radio" type="radio" name="survey-form" value="YouTube" checked> YouTube
+        </label>
+        <label>
+        <input class="radio" type="radio" name="survey-form" value="Instagram"> Instagram
+        </label>
+        <label>
+        <input class="radio" type="radio" name="survey-form" value="Tiktok"> Tiktok
+        </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>Who would you recommend our website to?</p>
+        <div class="sosmed">
+        <label>
+          <input class="checkbox" type="checkbox" name="survey-form" value="friend" checked> Friend
+        </label>
+        <label>
+          <input class="checkbox" type="checkbox" name="survey-form" value="family"> Family
+        </label>
+        <label>
+          <input class="checkbox" type="checkbox" name="survey-form" value="other"> other
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What do you think about us?</p>
+        <textarea class="mind" placeholder="I love this website because..."></textarea>
+       </div>
+      </div>
+      <div class="form-group">
+        <input id="submit" type="submit" class="submit-button">
+</html>
